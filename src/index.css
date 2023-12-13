@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  background-color: #252040;
+}
+
+ h2{
+  color: aliceblue;
+}
+
+.colorParrafo{
+  background-image: linear-gradient(to right, white, rgb(78, 173, 221));
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+  background-clip: text;
+  color: transparent;
+}
