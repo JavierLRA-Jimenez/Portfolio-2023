@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin  } from 'react-icons/fa';
+import retrato from '../assets/retrato.jpg'
 
 const Hero = () => {
 
@@ -39,7 +40,7 @@ const Hero = () => {
           {/* Cambia la ruta de la imagen por tu imagen */}
           <img
             className=" rounded-full w-full h-full object-cover rounded-t-2xl"
-            src="src/assets/retrato.jpg"
+            src= {retrato}
             alt="Foto"
           />
         </div>

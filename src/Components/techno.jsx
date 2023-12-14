@@ -3,6 +3,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaBootstrap, FaGithub } from 're
 import { TbBrandVite } from 'react-icons/tb';
 import { SiJavascript, SiTailwindcss, SiNpm, SiPowershell, SiPython, SiKalilinux, SiUbuntu } from 'react-icons/si';
 
+
 const Tech = () => {
   return (
     <section className=" text-white h-[90h] flex items-center justify-center mt-20" style={{backgroundColor:'#252040'}} >

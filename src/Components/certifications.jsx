@@ -1,4 +1,9 @@
 import { Card, CardMedia, Grid } from '@mui/material';
+import bug from '../assets/Certificate/bug.png'
+import c from '../assets/Certificate/c.png'
+import design from '../assets/Certificate/design.png'
+import front from '../assets/Certificate/front.png'
+import js from '../assets/Certificate/js.png'
 
 function Certificado({ imagen, titulo}) {
   return (
@@ -17,19 +22,19 @@ function Certificado({ imagen, titulo}) {
 function SeccionCertificados() {
     const certificados = [
       {
-        imagen: 'src/assets/Certificate/front.png',
+        imagen: front,
       },
       {
-        imagen: 'src/assets/Certificate/js.png',
+        imagen: js,
       },
       {
-        imagen: 'src/assets/Certificate/design.png',
+        imagen: design,
       },
       {
-        imagen: 'src/assets/Certificate/bug.png',
+        imagen: bug,
       },
       {
-        imagen: 'src/assets/Certificate/c.png',
+        imagen: c,
       }
     ];
   

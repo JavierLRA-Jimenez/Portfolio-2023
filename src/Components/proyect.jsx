@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import { FaGitAlt } from "react-icons/fa6";
 import { SiReact, SiJavascript, SiHtml5, SiCss3, SiVite, SiTailwindcss } from 'react-icons/si';
+import calculator from '../assets/Calculator.png'
+import doc from '../assets/Doc.png'
+import lez from '../assets/Lez.png'
+import mhw from '../assets/mhw.png'
+import pomodoro from '../assets/Pomodoro.png'
+import rest from '../assets/Restaurant.png'
+import reborn from '../assets/Reborn.png'
+
 
 const ProjectCard = ({ title, description, githubLink, image, technologies, directLink }) => {
   return (
@@ -69,14 +77,14 @@ const Proyect = () => {
       title: 'Monster Hunter World Guide',
       description: 'Project using MH API to help new MHW players (Responsive)',
       directLink: 'https://monster-hunter-world.vercel.app/',
-      image: 'src/assets/mhw.png',
+      image: mhw,
       technologies: ['React', 'Vite', 'Tailwindcss', 'Git'],
     },
       {
         title: 'International Artist',
         description: 'Teamwork with graphic designers and responsible for the entire front end (Responsive)',
         directLink: 'https://lezflp.netlify.app/',
-        image: 'src/assets/Lez.png',
+        image: lez,
         technologies: ['React', 'Vite', 'Tailwindcss', 'Git'],
       },
    
@@ -84,35 +92,35 @@ const Proyect = () => {
       title: 'CyberNexus Reborn',
       description: 'Animated and interactive launcher for armored core style gameplay. Done in a single work day',
       directLink: 'https://cybernexus.vercel.app/',
-      image: 'src/assets/Reborn.png',
+      image: reborn,
       technologies: ['React', 'Vite', 'Tailwindcss', 'Git'],
     },
     {
         title: 'Doctor Landing Page',
         description: 'Specific and simple job of converting a business card on a website',
         directLink: 'https://doclandingpage.netlify.app/',
-        image: 'src/assets/Doc.png',
+        image: doc,
         technologies: ['React', 'Vite', 'Tailwindcss', 'Git'],
       },
       {
         title: 'Demo Restaurant',
         description: 'Develop dashboard for restaurant as a practice',
         githubLink: 'https://github.com/JavierLRA-Jimenez/Restaurant-',
-        image: 'src/assets/Restaurant.png',
+        image: rest,
         technologies: ['React', 'Vite', 'Tailwindcss', 'Git'],
       },
       {
         title: 'IPhone Calculator',
         description: 'IPhone style calculator programming logic project using basic programming languages',
         githubLink: 'https://codepen.io/JavierJC/pen/YzJMagb',
-        image: 'src/assets/Calculator.png',
+        image: calculator,
         technologies: [ 'JavaScript', 'HTML5', 'CSS3'],
       },
       {
         title: 'Pomodoro Clock',
         description: 'project mostly made with js to test the logic of a 25+ 5 clock playing with time, reset and repetitions',
         githubLink: 'https://codepen.io/JavierJC/pen/vYVMqxV?editors=0010',
-        image: 'src/assets/Pomodoro.png',
+        image: pomodoro,
         technologies: ['JavaScript', 'HTML5', 'CSS3'],
       },
   ];
