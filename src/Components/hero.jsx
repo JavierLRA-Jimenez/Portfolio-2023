@@ -1,18 +1,19 @@
 import React from 'react';
 import { FaGithub, FaLinkedin  } from 'react-icons/fa';
 import retrato from '../assets/retrato.jpg'
+import resume from '../assets/JavierJimenezCv.pdf'
 
 const Hero = () => {
 
   
   const download = () => {
 
-    const pdfPath = '/ruta/al/archivo.pdf'; // Reemplaza con la ruta correcta
+    const pdfPath = resume; // Reemplaza con la ruta correcta
     
     // Crear un enlace temporal
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = 'mi_cv.pdf'; // Nombre del archivo que se descargará
+    link.download = 'JavierJimenezCv'; // Nombre del archivo que se descargará
     link.click();
   };
 
@@ -26,7 +27,7 @@ const Hero = () => {
             "Within the realm of code, every linearity unveils a chance to craft a new reality."
           </p>
           <div className='flex text-center md:ml-28'>
-          <button onClick={download} className='bg-cyan-600 rounded-md h-12 w-40 mt-7 hover:bg-purple-500 transition duration-200'>CV</button>
+          <button onClick={download} className='bg-cyan-600 rounded-md h-12 w-40 mt-7 hover:bg-purple-500 transition duration-200'>Resume</button>
         <a href="mailto:javierjimenemk@gmail.com" className="bg-cyan-600 rounded-md h-12 w-40 mt-7 ml-3 p-3 hover:bg-purple-500 transition duration-200 items-center justify-center" target="_blank">Contact </a>
       </div>
       <div className='flex text-center pt-7 md:ml-28'>
