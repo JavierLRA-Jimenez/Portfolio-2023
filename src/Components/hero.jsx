@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaGithub, FaLinkedin  } from 'react-icons/fa';
 import retrato from '../assets/retrato.jpg'
-import resume from '../assets/JavierJimenezCv.pdf'
+import cv from '../assets/JavierJimenezCv.pdf'
 
 const Hero = () => {
 
   
   const download = () => {
 
-    const pdfPath = resume; // Reemplaza con la ruta correcta
+    const pdfPath = {cv}; // Reemplaza con la ruta correcta
     
     // Crear un enlace temporal
     const link = document.createElement('a');
