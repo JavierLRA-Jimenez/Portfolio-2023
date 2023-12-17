@@ -8,12 +8,12 @@ const Hero = () => {
   
   const download = () => {
 
-    const pdfPath = {cv}; // Reemplaza con la ruta correcta
+    const pdfPath = cv; // Reemplaza con la ruta correcta
     
     // Crear un enlace temporal
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = 'JavierJimenezCv'; // Nombre del archivo que se descargará
+    link.download = 'JavierJimenezCV'; // Nombre del archivo que se descargará
     link.click();
   };
 
