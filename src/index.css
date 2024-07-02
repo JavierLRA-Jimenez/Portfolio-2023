@@ -3,16 +3,10 @@
 @tailwind utilities;
 
 :root{
-  background-color: #252040;
+  font-family:sans-serif;
+  background-color: aliceblue;
 }
 
- h2{
-  color: aliceblue;
-}
-
-.colorParrafo{
-  background-image: linear-gradient(to right, white, rgb(78, 173, 221));
-  -webkit-background-clip: text; /* Para navegadores basados en WebKit */
-  background-clip: text;
-  color: transparent;
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

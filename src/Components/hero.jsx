@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin  } from 'react-icons/fa';
+import { FaDotCircle, FaGithub, FaLinkedin  } from 'react-icons/fa';
 import retrato from '../assets/retrato.jpg'
 import cv from '../assets/JavierJimenezCV.pdf'
 
@@ -18,36 +18,45 @@ const Hero = () => {
   };
 
   return (
-    <section className=' text-white h-screen flex items-center justify-center mt-10 md:mt-0' style={{background :'#252040'}} id='hero'>
-      <div className="flex justify-between items-center w-3/4">
+    <section className=' h-screen flex items-center '>
+      <div className="flex flex-row mx-12">
         {/* Lado izquierdo */}
-        <div className="text-left">
-          <h1 className=" font-bold md:text-9xl text-7xl mb-4">Front End Developer</h1>
-          <p className="text-lg">
-            "Within the realm of code, every linearity unveils a chance to craft a new reality."
-          </p>
-          <div className='flex text-center md:ml-28'>
-          <button onClick={download} className='bg-cyan-600 rounded-md h-12 w-40 mt-7 hover:bg-purple-500 transition duration-200'>Resume</button>
-        <a href="mailto:javierjimenemk@gmail.com" className="bg-cyan-600 rounded-md h-12 w-40 mt-7 ml-3 p-3 hover:bg-purple-500 transition duration-200 items-center justify-center" target="_blank">Contact </a>
-      </div>
-      <div className='flex text-center pt-7 md:ml-28'>
-        <a href='https://github.com/JavierLRA-Jimenez'><FaGithub className='h-12 w-40 hover:text-purple-500 transition duration-500 '/></a>
-        <a href='https://www.linkedin.com/in/javier-jimenez-carral-68ba5423b/'><FaLinkedin className='h-12 w-40 hover:text-purple-500 transition duration-500'/></a>
-      </div>
-        </div>
+        <div className="flex justify-start w-full">
+  <div className="text-left w-9/12 ">
+    <h1 className="font-bold md:text-9xl text-7xl mb-4 relative">
+      <span className='text-shadow'>Full Stack Engineer</span>
+    </h1>
+    <div className='flex justify-start'>
+      <button onClick={download} className='bg-blue-600 rounded-md h-12 w-40 mt-12 hover:bg-purple-500 transition duration-500 text-white'>Resume</button>
+      <a href="mailto:javierjimenemk@gmail.com" className="bg-blue-600 rounded-md h-12 w-40 mt-12 ml-3 p-3 text-center hover:bg-purple-500 transition duration-500 text-white" target="_blank">Contact</a>
+    </div>
+  </div>
+</div>
 
-        {/* Lado derecho */}
-        <div className="hidden sm:hidden md:block rounded-full border-4 w-1/3 object-cover rounded-t-2xl ">
-          {/* Cambia la ruta de la imagen por tu imagen */}
-          <img
-            className=" rounded-full w-full h-full object-cover rounded-t-2xl"
-            src= {retrato}
-            alt="Foto"
-          />
-        </div>
+<div className="object-cover w-3/12 h-full items-center justify-center flex ">
+  <div className='overflow-hidden rounded-b-full rounded-t-full border-8  border-blue-500 flex items-center justify-center'>
+    <div className=' h-auto w-96 overflow-hidden rounded-xl'>
+      <img
+        className="object-cover h-full w-full"
+        src={retrato}
+        alt="Foto"
+      />
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );
 };
 
 export default Hero;
+
+{/* <div className=' text-center items-center flex flex-row mt-7 '>
+   <div className='items-center justify-center'>
+   <a href='https://github.com/JavierLRA-Jimenez'><FaGithub className='h-12 w-40 hover:text-orange-500 transition duration-500 '/></a>
+   </div>
+   <a href='https://www.linkedin.com/in/javier-jimenez-carral-68ba5423b/'><FaLinkedin className='h-12 w-40 hover:text-cyan-500 transition duration-500'/></a>
+   </div> 
+   */}
+
+   {/* Lado derecho */}

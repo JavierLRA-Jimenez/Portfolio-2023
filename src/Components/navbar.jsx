@@ -10,17 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white w-full fixed top-0 z-50" style={{ backgroundColor: '#0b6385' }}>
+    <nav className=" w-full fixed top-0 z-50 bg-gray-200/60 backdrop-blur-lg transition-all">
       <div className="container mx-auto px-10 flex justify-between items-center py-6">
-        <div className="text-xl font-semibold uppercase">Javier Jimenez</div>
+        <div className="text-xl font-semibold "> Javier Jimenez</div>
         <div className="flex justify-center items-center">
           <div className="hidden md:flex space-x-6 text-lg font-semibold">
-            <Link to='hero' className='cursor-pointer hover:text-purple-500 transition duration-200' smooth={true}>Home</Link>
-            <Link to="about" className='cursor-pointer hover:text-purple-500 transition duration-200' smooth={true}>About Me</Link>
-            <Link to="techno" className='cursor-pointer hover:text-purple-500 transition duration-200' smooth={true}>Technologies</Link>
-            <Link to="proyect" className='cursor-pointer hover:text-purple-500 transition duration-200' smooth={true}>Project</Link>
-            <Link to="certifi" className='cursor-pointer hover:text-purple-500 transition duration-200' smooth={true}>Certifications</Link>
-            <a href="mailto:javierjimenemk@gmail.com" className="cursor-pointer hover:text-purple-500 transition duration-200" target="_blank">Contact</a>
+            <Link to="about" className='cursor-pointer hover:text-purple-600 transition duration-200' smooth={true}>About Me</Link>
+            <Link to="techno" className='cursor-pointer hover:text-purple-600 transition duration-200' smooth={true}>Tech Stack</Link>
+            <Link to="proyect" className='cursor-pointer hover:text-purple-600 transition duration-200' smooth={true}>Featured Works</Link>
+            <a href="mailto:javierjimenemk@gmail.com" className="cursor-pointer hover:text-purple-600 transition duration-200" target="_blank">Contact</a>
           </div>
           <div className="md:hidden">
             {showMenu ? (

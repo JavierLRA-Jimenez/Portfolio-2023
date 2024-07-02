@@ -4,18 +4,19 @@ import Hero from './hero'
 import Techno from './techno'
 import Proyect from './proyect'
 import About from './aboutme'
-import Certification from './certifications'
+import MaxWidthWrapper from './MaxWidthWrapper'
 
 const Container = () => {
   return (
-    <section>
+    <section className=''>
     <Navbar/>
-    <Hero/>
-    <About/>
-    <Techno/>
-    <Proyect/>
-    <Certification/>
-    </section>
+    <MaxWidthWrapper className="bg-zinc-50">
+      <Hero/>
+      <About/>
+      <Techno/>
+      <Proyect/>
+    </MaxWidthWrapper>
+   </section>
   )
 }
 
