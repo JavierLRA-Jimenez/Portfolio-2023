@@ -5,6 +5,9 @@ import Techno from './techno'
 import Proyect from './proyect'
 import About from './aboutme'
 import MaxWidthWrapper from './MaxWidthWrapper'
+import Certifications from './certifications'
+import Footer from './footer'
+
 
 const Container = () => {
   return (
@@ -15,7 +18,9 @@ const Container = () => {
       <About/>
       <Techno/>
       <Proyect/>
+      <Certifications/>
     </MaxWidthWrapper>
+    <Footer/>
    </section>
   )
 }

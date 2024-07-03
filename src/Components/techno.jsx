@@ -9,7 +9,7 @@ const Tech = () => {
   return (
     <section className="flex md:w-[100%] justify-center mt-20"  >
       <div className="container mx-auto px-4">
-        <h2 className='md:text-7xl text-6xl text-center font-bold mb-4 text-shadow' id='tech'>Tech Stack</h2>
+        <h2 className='md:text-7xl text-6xl text-center font-bold mb-4 text-shadow' id='techno'>Tech Stack</h2>
         <p className='font-thin flex flex-row items-center justify-center text-sm'>
           <BiBook className='text-blue-500' /> 
           <span className='text-black/50 ml-1'>Eager to learn more</span>
